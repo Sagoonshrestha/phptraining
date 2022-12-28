@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<body>
+<div id="fb-root"></div><script src="https://connect.facebook.net/en_US/sdk.js" nonce="3jWWRM2h"></script><script nonce="3jWWRM2h">
+          FB.init({
+            appId   : 1866747600266711,
+            status  : true,
+            xfbml   : true,
+            version : 'v2.9'
+          });
+          FB.AppEvents.logPageView();
+          </script>
+          <script type="text/javascript">FB.login(function(response) {
+    if (response.authResponse) {
+     console.log('Welcome!  Fetching your information.... ');
+     FB.api('/me', function(response) {
+       console.log('Good to see you, ' + response.name + '.');
+     });
+    } else {
+     console.log('User cancelled login or did not fully authorize.');
+    }
+});</script>
+</body>
+</html>

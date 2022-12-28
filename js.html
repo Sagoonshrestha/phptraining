@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS</title>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+// 		let b
+// 		a=swal("Click on either the button or outside the modal.")
+// .then((value) => {
+// 	console.log(value);
+// 	b=value;
+//   swal(`The returned value is: ${value}`);
+// }).finally();
+// // Promise.resolve(a);
+// console.log(b);
+
+
+async function check()
+{
+  let result=await swal({title: 'warning',
+            text: 'yes',
+          buttons:true});
+ 
+  return result;
+}
+ a=async () =>{
+if(await check()==true)
+	{
+  	document.write("True");
+  }
+  else
+  {
+  	  	document.write("falas");	
+  }
+
+};
+a();
+	</script>
+<p>hello</p>
+</body>
+</html>
